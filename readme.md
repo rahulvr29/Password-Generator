@@ -19,5 +19,5 @@ As mentioned above, there are many ways to host your project for free. Our recom
 
 ## Links 
 
-- Solution URL: [Click here]()
-- Live Site URL: [Click here]()
+- Solution URL: [Click here](https://github.com/rahulvr29/Password-Generator.git)
+- Live Site URL: [Click here](https://password-generator-nine-tawny.vercel.app/)
