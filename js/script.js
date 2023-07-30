@@ -30,9 +30,8 @@ function generatePassword () {
 
 	for (let i = 0; i <= length; i++) {
 		let rand = Math.floor(Math.random() * chars.length);
-		password += chars.substring(rand, rand - 1);
+		password += chars.substring(rand, rand + 1);
 	}
-
 	password_el.textContent = password;
 }
 
