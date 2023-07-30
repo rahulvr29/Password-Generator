@@ -28,13 +28,9 @@ function generatePassword () {
 	chars += numbers_el.checked ? numbers_chars : "";
 	chars += symbols_el.checked ? symbols_chars : "";
 
-	if(chars === 0) {
-		return '';
-	}
-
-	for (let i = 0; i < length; i++) {
+	for (let i = 0; i <= length; i++) {
 		let rand = Math.floor(Math.random() * chars.length);
-		password += chars.substring(rand, rand + 1);
+		password += chars.substring(rand, rand - 1);
 	}
 
 	password_el.textContent = password;
