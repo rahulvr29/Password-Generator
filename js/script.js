@@ -28,8 +28,12 @@ function generatePassword () {
 	chars += numbers_el.checked ? numbers_chars : "";
 	chars += symbols_el.checked ? symbols_chars : "";
 
-	for (let i = 0; i <= length; i++) {
-		let rand = Math.floor(Math.random() * chars.length - 1);
+	if(chars === 0) {
+		return '';
+	}
+
+	for (let i = 0; i < length; i++) {
+		let rand = Math.floor(Math.random() * chars.length);
 		password += chars.substring(rand, rand + 1);
 	}
 
