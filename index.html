@@ -11,15 +11,14 @@
   <title>Password Generator</title>
 </head>
 <body>
-  <section>
-    <div class="title">
+  <section class="card">
+    <div>
       <h2>Password Generator</h2>
-      <label class="password-wrap">
-        <input 
-					type="text" id="password" readonly placeholder="Generate a password" 
-				/>
-				<button class="material-icons" id="copy"><i class="fa-regular fa-clipboard"></i></button>
-      </label>
+      <div class="password-wrap">
+        <span id="result"></span>
+				<button class="btn material-icons" id="copy"><i class="fa-regular fa-clipboard"></i>
+        </button>
+      </div>
     </div>
     <div class="settings">
       <div class="setting">
@@ -35,7 +34,7 @@
         <input type="checkbox" id="lowercase" checked />
       </div>
       <div class="setting">
-        <label>Include numbers</label> 
+        <label>Include number</label> 
         <input type="checkbox" id="numbers" checked />
       </div>
       <div class="setting">
@@ -43,7 +42,7 @@
         <input type="checkbox" id="symbols" checked />
       </div>
     </div>
-    <button class="btn btn-large" id="generate">
+    <button class="btn generate" id="generate">
       Generate password
     </button>
   </section>
