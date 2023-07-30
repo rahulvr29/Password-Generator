@@ -29,7 +29,7 @@ function generatePassword () {
 	chars += symbols_el.checked ? symbols_chars : "";
 
 	for (let i = 0; i <= length; i++) {
-		let rand = Math.floor(Math.random() * chars.length);
+		let rand = Math.floor(Math.random() * chars.length - 1);
 		password += chars.substring(rand, rand + 1);
 	}
 
